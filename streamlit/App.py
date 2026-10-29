@@ -11,8 +11,6 @@ from pathlib import Path
 
 st.set_page_config(page_title="Pipeline Operator Risk", layout="wide")
 
-print("path:", Path(__file__).parent)
-
 DATA_FILE = Path(__file__).parent / "operator_risk_scores.csv"
 
 
