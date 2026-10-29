@@ -90,7 +90,7 @@ To run it:
 ```
 pip install streamlit pandas
 cd streamlit
-streamlit run app.py
+streamlit run App.py
 ```
  
 The app is for learning and discussion. It is not a live prediction tool.
