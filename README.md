@@ -50,7 +50,7 @@ Develop actionable recommendations: Translate the findings into risk-prioritizat
 
 #### Outline of project
 
-- [Link to notebook](https://github.com/RaniDeepLearning/BH-AI-ML-Assignment-20.1/blob/main/Pipeline_Cap.ipynb)
+- [Link to notebook](https://github.com/RaniDeepLearning/BH-AI-ML-Capstone-Project-24.1/blob/main/Pipeline_Cap.ipynb)
 
 ##### Contact and Further Information
 For further information about this project, its methodology, findings, or potential applications of machine learning in pipeline safety, please contact the project author.
