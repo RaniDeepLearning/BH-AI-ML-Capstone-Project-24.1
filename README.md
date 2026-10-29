@@ -83,13 +83,13 @@ The notebook takes a few minutes, mostly for reading the Excel files and the cro
 
 ## Optional: interactive explorer
  
-`streamlit_app/app.py` shows the test-year risk scores in a browser. It lets you choose a year, flag the top N operator-years or everything above a cutoff, and see recall, precision and a trade-off curve.
+`streamlit/app.py` shows the test-year risk scores in a browser. It lets you choose a year, flag the top N operator-years or everything above a cutoff, and see recall, precision and a trade-off curve.
  
 To run it:
  
 ```
 pip install streamlit pandas
-cd streamlit_app
+cd streamlit
 streamlit run app.py
 ```
  
