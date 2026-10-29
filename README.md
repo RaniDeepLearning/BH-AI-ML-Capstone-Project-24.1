@@ -38,7 +38,7 @@ Source links:
 3. **Split:** models are trained on 2010–2020 and tested on 2021–2024. The 2025 rows are held out.
 4. **Exploratory analysis:** rates by pipeline size, earlier incidents, and Part E pipe share, with 95% intervals and chi-square tests.
 5. **Feature engineering:** pipe age from the Part E decade columns, significant incidents in the last three years, and past incidents per mile.
-6. **Feature selection:** forward selection on the training years only, using grouped cross-validation so that no operator appears in both training and validation folds. The selected features were stable across three fold seeds.
+6. **Feature selection:** forward selection on the training years only, using grouped cross-validation so that no operator appears in both training and validation folds.
 7. **Models:** logistic regression, gradient boosting, and random forest, each tuned by grid search with grouped cross-validation.
 8. **Evaluation:** PR-AUC is the main metric, because only about 12% of rows are positive and accuracy would be misleading. ROC-AUC is a secondary check. Bootstrap intervals show whether differences are reliable.
 9. **Interpretation:** odds ratios from logistic regression and permutation importance from gradient boosting.
@@ -52,7 +52,7 @@ Source links:
 - **Selected features.** Forward selection chose four features: pipeline size, the share of pipe in high-consequence areas, past incidents per mile, and significant incidents in the last three years.
 - **Model comparison (2021–2024).** The selected logistic regression reached PR-AUC 0.644, against 0.588 for size alone and 0.615 for the baseline. Gradient boosting (0.645) and random forest (0.641) were about the same, so the simpler logistic regression was chosen.
 - **Gain over the baseline.** The selected model's PR-AUC gain over the 15-feature baseline has a 95% bootstrap interval of 0.000 to 0.054, so the improvement is suggestive, not clearly established. Against size alone, the 15-feature logistic regression gains 0.023 to 0.087 (95% interval).
-- **Robustness.** Removing the two largest operators from both training and test years does not change the picture. Gradient boosting scores 0.601 with and without them.
+- **Robustness.** Removing the two largest operators from both training and test years does not change the picture. 
 - **Pipe age.** The share of older pipe adds nothing once size and incident history are included.
 - **Threshold rule.** A cutoff of 0.485 catches 80% of significant incidents on the training years. On the test years it flags 532 of 2,262 operator-years, with recall 0.805 and precision 0.380.
 
