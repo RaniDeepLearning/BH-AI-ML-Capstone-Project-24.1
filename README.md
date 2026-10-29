@@ -51,7 +51,7 @@ Source links:
 - **Past incidents matter.** Operators with four or more earlier significant incidents had a 60.3% rate, against 5.0% for operators with none.
 - **Selected features.** Forward selection chose four features: pipeline size, the share of pipe in high-consequence areas, past incidents per mile, and significant incidents in the last three years.
 - **Model comparison (2021–2024).** The selected logistic regression reached PR-AUC 0.644, against 0.588 for size alone and 0.615 for the baseline. Gradient boosting (0.645) and random forest (0.641) were about the same, so the simpler logistic regression was chosen.
-- **Gain over size alone.** The bootstrap interval for the gain is 0.000 to 0.054, so the improvement is suggestive, not clearly established.
+- **Gain over the baseline.** The selected model's PR-AUC gain over the 15-feature baseline has a 95% bootstrap interval of 0.000 to 0.054, so the improvement is suggestive, not clearly established. Against size alone, the 15-feature logistic regression gains 0.023 to 0.087 (95% interval).
 - **Robustness.** Removing the two largest operators from both training and test years does not change the picture. Gradient boosting scores 0.601 with and without them.
 - **Pipe age.** The share of older pipe adds nothing once size and incident history are included.
 - **Threshold rule.** A cutoff of 0.485 catches 80% of significant incidents on the training years. On the test years it flags 532 of 2,262 operator-years, with recall 0.805 and precision 0.380.
