@@ -77,7 +77,7 @@ Source links:
 ## How to run the notebook
  
 1. Install the libraries listed below.
-2. Open `Pipeline_Cap.ipynb` from the notebook of project folder.
+2. Open `notebook/Pipeline_Cap.ipynb`. Start Jupyter from inside the `notebook` folder, because the notebook finds the project folder one level up.
 3. Choose **Kernel → Restart & Run All**.
 The notebook takes a few minutes, mostly for reading the Excel files and the cross-validation grid search. Random seeds are fixed, so results are repeatable.
 
@@ -102,6 +102,5 @@ For more about this project, its methodology, findings, or applications of machi
  
 Data source: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration (PHMSA)
 
-## Author
+**Author:** Rani Kumari, UC Berkeley
 
-Rani Kumari|UC Berkeley
