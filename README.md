@@ -8,7 +8,7 @@ This project uses historical data from the Pipeline and Hazardous Materials Safe
 
 #### Outline of project
 
-- [Link to notebook](https://github.com/RaniDeepLearning/BH-AI-ML-Capstone-Project-24.1/blob/main/Pipeline_Cap.ipynb)
+- [Link to notebook](github.com/RaniDeepLearning/BH-AI-ML-Capstone-Project-24.1/blob/main/notebook/Pipeline_Cap.ipynb)
 
 ## Research question
  
